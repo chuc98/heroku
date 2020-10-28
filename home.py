@@ -241,7 +241,7 @@ def actualizarPass():
            return redirect(url_for('index'))
         else:
             errorlog= "Te faltan campos"
-            Modelo.entities(user, 'Error al registrarse', 'No pudo registrarse')
+            Modelo.entities(user, 'Error al registrarse', 'Se registro')
             return render_template('registro.html', errorlog = errorlog)
 
     return render_template("./actualizar.html")
