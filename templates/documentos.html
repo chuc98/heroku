@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Documentos</title>
+    <link rel="shortcut icon" href="../static/ekko.jpg" type ="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='didocumentos.css')}}" >
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+<body>
+    <header>
+    <nav>
+        <nav role="navigation">
+            <div id="menuToggle">
+         
+              <input type="checkbox" />
+              
+          
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul id="menu">
+                <a href="/logeado"><li>Mi Perfil</li></a>
+                <a href="/misdatos"><li>Mis Datos</li></a>
+                <a href="/cerrar"><li>Cerrar sesion</li></a>
+                
+               
+              </ul>
+            </div>
+          </nav>
+    </nav>
+
+    <section class="textos-header">
+        <h1> Sube aquí tus documentos </h1>       
+   </section>
+   </header>
+   <section class="about-services">
+    <div class="contedor">
+            <h2 class="titulo">Doscumentos Personales</h2>
+            <div class="servicio-cont">
+                <div class="servicio-ind">
+                    <img src="../static/frente.jpeg" alt="">
+                    <h3>Identificación oficial Parte delantera</h3>
+                    <p>Sube la parte delantera de tu identificación oficial</p>
+                    <div class="card-footer"> 
+                    
+                        <input  type="file" name="identfront" id="img-uploader" multiple="multiple">
+                        <div><button  id="intento" >Confirmar documento</button></div>
+                        </div>
+                    
+                    
+                </div>
+        
+                <div class="servicio-ind">
+                    <img src="../static/trasera.jpg" alt="">
+                    <h3>Identificación Oficial Parte Trasera </h3>
+                    <p>Sube la parte de atrás de tu identificación oficial</p>
+                    <div class="card-footer"> 
+                        
+                            <input type="file" name="traser" id="img-traser" multiple="multiple">
+                            <div><button type="submit" id="intentotraser">Confirmar documento</button></div>   
+                    </div>
+                </div>
+            </form>
+                <div class="servicio-ind">
+                    <img src="../static/comprobante.jpg" alt="">
+                    <h3>Comprobante de domicilio</h3>
+                    <p>Sube un comprobante de domicilio </p>
+                    <div class="card-footer"> 
+                        
+                        <input type="file" name="compd" id="img-compro" multiple="multiple">
+                        <div><button type="submit" id="intentocompro">Confirmar documento</button></div>   
+                    </div>
+                </div>
+            </form>
+                <div class="servicio-ind">
+                    <img src="../static/defi.jpg" alt="">
+                    <h3>Selfie</h3>
+                    <p>Sube una foto de tu cara</p>
+                    <div class="card-footer"> 
+                        
+                        <input type="file" name="selfi" id="img-selfi" multiple="multiple">
+                        <div><button type="submit" id="intentoselfie">Confirmar documento</button></div>
+                         
+                    </div>
+                    
+                        
+                </div>
+                
+            </form>
+            
+            
+            </div>
+            <div class="progress-bar" role="progressbar" id="progress" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>     
+                      </div>
+                      <div class="progress">
+    </div>
+ 
+</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../static/alertaine.js"></script>
+</body>
+</html>    
