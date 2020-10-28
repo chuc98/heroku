@@ -166,8 +166,9 @@ def misdatos():
    _email=busqueda
    _direccion=Modelo.SelectDireccion(busqueda)
    _fechanacimiento=Modelo.SelectFecha(busqueda)
-   Modelo.CrearPDF(_name,_rfc,_email,_direccion,_fechanacimiento)
-   Modelo.EnviarCorreoContrato(_name,_email)
+	
+   #Modelo.CrearPDF(_name,_rfc,_email,_direccion,_fechanacimiento)
+   #Modelo.EnviarCorreoContrato(_name,_email)
    try:
       busquedaN= Modelo.SelectNombre(session['user'])
       busquedaEm= Modelo.SelectCorreo(session['user'])
